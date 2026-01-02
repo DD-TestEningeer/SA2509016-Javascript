@@ -176,6 +176,132 @@ function a() {
 * Avoid unnecessary **global variables** to prevent flaky tests.
 
 
+# 9) Declaration of Variables in JavaScript
+
+JavaScript provides different ways to declare variables, each with its own scope behavior.
+
+---
+
+### 1. Using `var`
+- Function-scoped
+- Can be global or local based on where it is declared
+
+```js
+var x = 10;
+
+function showVar() {
+  var y = 20;
+  console.log(x); // 10
+  console.log(y); // 20
+}
+
+showVar();
+````
+
+---
+
+### 2. Using `let`
+
+* Block-scoped
+* Value can be reassigned
+
+```js
+let count = 1;
+
+if (count === 1) {
+  let message = "Inside block";
+  console.log(message);
+}
+```
+
+---
+
+### 3. Using `const`
+
+* Block-scoped
+* Value cannot be reassigned
+
+```js
+const appName = "QA Automation";
+
+function showApp() {
+  console.log(appName);
+}
+
+showApp();
+```
+
+---
+
+## Variable Scopes in JavaScript
+
+### Global Scope
+
+* Accessible anywhere in the script
+
+```js
+var globalUser = "Admin";
+
+function accessGlobal() {
+  console.log(globalUser);
+}
+
+accessGlobal();
+```
+
+---
+
+### Module Scope
+
+* Accessible only within the module
+
+```js
+export const timeout = 5000;
+```
+
+---
+
+### Function Scope
+
+* Accessible only inside the function
+
+```js
+function login() {
+  let username = "tester";
+  console.log(username);
+}
+
+login();
+```
+
+---
+
+### Block Scope
+
+* Accessible only inside `{ }`
+* Applies to `let` and `const`
+
+```js
+if (true) {
+  const status = "PASS";
+  console.log(status);
+}
+```
+
+---
+
+### QA Best Practice
+
+* Use `const` by default
+* Use `let` when value needs to change
+* Avoid `var` to prevent scope-related issues
+
+
+
+
+
+
+
 
 
 
