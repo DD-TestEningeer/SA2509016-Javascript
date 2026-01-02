@@ -355,6 +355,36 @@ This behavior can cause **unexpected bugs** if not understood properly.
 
 
 
+# 11) Hoisting in JavaScript
+
+Hoisting is a JavaScript behavior where **variable and function declarations are moved to the top of their scope** before execution.
+
+### Example with `var`
+```js
+console.log(x); // undefined
+var x = 10;
+````
+
+### Example with `let`
+
+```js
+console.log(y); // ReferenceError
+let y = 20;
+```
+
+### Key Points
+
+* Only **declarations** are hoisted, not initializations
+* `var` allows access before declaration (returns `undefined`)
+* `let` and `const` throw errors if used before declaration
+* Hoisting can cause **unexpected bugs**
+
+### Best Practice
+
+* Avoid `var`
+* Use `let` and `const`
+
+
 
 
 
