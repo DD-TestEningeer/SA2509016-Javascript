@@ -423,67 +423,68 @@ JavaScript data types are divided into **Primitive** and **Non-Primitive** types
 
 
 # 13) JavaScript Operators 
+
 ---
 
 ### 1. Arithmetic Operators
-| Operator | Example            | Result |
-|----------|------------------|--------|
-| `+`      | `2 + 3`           | 5      |
-| `-`      | `5 - 2`           | 3      |
-| `*`      | `4 * 2`           | 8      |
-| `/`      | `10 / 2`          | 5      |
-| `%`      | `10 % 3`          | 1      |
-| `++`     | `let x = 1; x++`  | 2      |
-| `--`     | `let y = 2; y--`  | 1      |
+| Operator | Meaning       | Example            | Result |
+|----------|---------------|------------------|--------|
+| `+`      | Addition      | `2 + 3`           | 5      |
+| `-`      | Subtraction   | `5 - 2`           | 3      |
+| `*`      | Multiplication| `4 * 2`           | 8      |
+| `/`      | Division      | `10 / 2`          | 5      |
+| `%`      | Modulus       | `10 % 3`          | 1      |
+| `++`     | Increment     | `let x = 1; x++`  | 2      |
+| `--`     | Decrement     | `let y = 2; y--`  | 1      |
 
 ---
 
 ### 2. Assignment Operators
-| Operator | Example        | Result |
-|----------|---------------|--------|
-| `=`      | `let a = 10`  | a = 10 |
-| `+=`     | `a += 5`      | a = 15 |
-| `-=`     | `a -= 3`      | a = 12 |
-| `*=`     | `a *= 2`      | a = 24 |
-| `/=`     | `a /= 2`      | a = 12 |
-| `%=`     | `a %= 5`      | a = 2  |
+| Operator | Meaning             | Example        | Result |
+|----------|-------------------|---------------|--------|
+| `=`      | Assign value        | `let a = 10`  | a = 10 |
+| `+=`     | Add and assign      | `a += 5`      | a = 15 |
+| `-=`     | Subtract and assign | `a -= 3`      | a = 12 |
+| `*=`     | Multiply and assign | `a *= 2`      | a = 24 |
+| `/=`     | Divide and assign   | `a /= 2`      | a = 12 |
+| `%=`     | Modulus and assign  | `a %= 5`      | a = 2  |
 
 ---
 
 ### 3. Comparison Operators
-| Operator | Example        | Result |
-|----------|---------------|--------|
-| `==`     | `5 == '5'`    | true   |
-| `===`    | `5 === '5'`   | false  |
-| `!=`     | `5 != 3`      | true   |
-| `!==`    | `5 !== '5'`   | true   |
-| `>`      | `10 > 5`      | true   |
-| `<`      | `10 < 5`      | false  |
-| `>=`     | `10 >= 10`    | true   |
-| `<=`     | `5 <= 3`      | false  |
+| Operator | Meaning                  | Example        | Result |
+|----------|-------------------------|---------------|--------|
+| `==`     | Equal to (value only)    | `5 == '5'`    | true   |
+| `===`    | Strict equal (value+type)| `5 === '5'`   | false  |
+| `!=`     | Not equal (value only)   | `5 != 3`      | true   |
+| `!==`    | Strict not equal         | `5 !== '5'`   | true   |
+| `>`      | Greater than             | `10 > 5`      | true   |
+| `<`      | Less than                | `10 < 5`      | false  |
+| `>=`     | Greater than or equal    | `10 >= 10`    | true   |
+| `<=`     | Less than or equal       | `5 <= 3`      | false  |
 
 ---
 
 ### 4. Logical Operators
-| Operator | Example         | Result |
-|----------|----------------|--------|
-| `&&`     | `true && false`| false  |
-| `||`     | `true || false`| true   |
-| `!`      | `!true`        | false  |
+| Operator | Meaning       | Example         | Result |
+|----------|---------------|----------------|--------|
+| `&&`     | Logical AND   | `true && false`| false  |
+| `||`     | Logical OR    | `true || false`| true   |
+| `!`      | Logical NOT   | `!true`        | false  |
 
 ---
 
 ### 5. String Operator
-| Operator | Example                       | Result       |
-|----------|-------------------------------|--------------|
-| `+`      | `"QA" + " Tester"`            | `"QA Tester"`|
+| Operator | Meaning           | Example                       | Result       |
+|----------|-----------------|-------------------------------|--------------|
+| `+`      | Concatenation    | `"QA" + " Tester"`            | `"QA Tester"`|
 
 ---
 
 ### 6. Ternary Operator
-| Operator       | Example                                      | Result   |
-|----------------|---------------------------------------------|----------|
-| `? :`          | `let status = age >= 18 ? "Adult" : "Minor";` | `"Adult"` if age ≥ 18 |
+| Operator       | Meaning               | Example                                      | Result   |
+|----------------|---------------------|---------------------------------------------|----------|
+| `? :`          | Conditional shortcut | `let status = age >= 18 ? "Adult" : "Minor";` | `"Adult"` if age ≥ 18 |
 
 
 
