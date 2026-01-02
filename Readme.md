@@ -20,5 +20,16 @@
 - Makes web pages **interactive and responsive**.  
 - **Case-sensitive** language (variable and function names must match exactly).
 
+# 3) Java vs JavaScript
+
+| Feature | Java | JavaScript |
+|---------|------|------------|
+| Type | OOP Programming Language | OOP Scripting Language |
+| Typing | Strongly typed (data type required before declaration) | Loosely typed (no need to declare data type) |
+| Execution | Compiled | Interpreted / Just-In-Time (JIT) compiled |
+| Type Checking | Static | Dynamic |
+| Environment | Runs on JVM or browser | Runs in browser only |
+
+
 
 
