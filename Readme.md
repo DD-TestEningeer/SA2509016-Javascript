@@ -82,4 +82,40 @@
 4. If the version is displayed, the setup is complete.
 
 
+# 6) JavaScript Comments
+
+JavaScript comments are a meaningful way to add messages or explanations to the code.  
+They help improve code readability and understanding.  
+Comments are **ignored by the JavaScript engine** embedded in browsers and do not affect program execution.
+
+### Types of Comments
+
+#### 1. Single-Line Comment
+Used to add a comment in a single line.
+
+```js
+// This is a single-line comment
+````
+
+#### 2. Multi-Line Comment
+
+Used to add comments across multiple lines.
+
+```js
+/*
+This is a
+multi-line comment
+*/
+```
+
+### QA Best Practice
+
+* Use comments to explain test logic in automation scripts.
+* Helpful for maintenance and team collaboration.
+
+
+
+
+
+
 
