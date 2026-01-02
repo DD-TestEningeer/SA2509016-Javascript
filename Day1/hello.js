@@ -1,0 +1,1 @@
+console.log("Happy New Year to All 2026") // output to the console 
