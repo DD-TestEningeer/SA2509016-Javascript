@@ -297,6 +297,64 @@ if (true) {
 * Avoid `var` to prevent scope-related issues
 
 
+# 10) Choosing Between `var`, `let`, and `const`
+
+### Use `const`
+- Use `const` when the variable value **should never change**.
+
+```js
+const baseUrl = "https://example.com";
+console.log(baseUrl);
+````
+
+---
+
+### Use `let`
+
+* Use `let` when the variable value **needs to change**.
+* Does **not** allow unsafe hoisting.
+
+```js
+let count = 1;
+count = 2;
+console.log(count);
+```
+
+---
+
+### Use `var`
+
+* Use `var` if you want **reassignment with hoisting behavior**.
+* Function-scoped and hoisted to the top.
+
+```js
+console.log(value); // undefined
+var value = 10;
+```
+
+---
+
+## Hoisting Behavior
+
+Hoisting moves variable declarations to the top of their scope.
+
+```js
+console.log(a); // undefined
+var a = 5;
+```
+
+This behavior can cause **unexpected bugs** if not understood properly.
+
+---
+
+## Best Practice
+
+* Avoid using `var` due to hoisting and scope issues
+* Prefer `let` and `const` for safer and cleaner code
+* Use `const` by default, and `let` only when reassignment is required
+
+
+
 
 
 
