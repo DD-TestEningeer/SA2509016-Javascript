@@ -384,6 +384,41 @@ let y = 20;
 * Avoid `var`
 * Use `let` and `const`
 
+# 12) JavaScript Data Types with Uses
+
+JavaScript data types are divided into **Primitive** and **Non-Primitive** types.  
+
+---
+
+### Primitive Data Types
+- Hold a **single simple value** and are immutable.
+
+| Type      | Example                          | Use in QA / Automation |
+|-----------|---------------------------------|----------------------|
+| String    | `let name = "QA Tester";`       | Store text like usernames, test messages, or element values |
+| Number    | `let age = 25;`                 | Perform calculations, validate numeric inputs |
+| BigInt    | `let bigNumber = 9007199254740991n;` | Handle very large integers beyond Number limits |
+| Boolean   | `let isActive = true;`          | Control flow, flags for test conditions or assertions |
+| undefined | `let value;`                    | Detect uninitialized variables or optional parameters |
+| null      | `let data = null;`              | Represent empty or missing values in test data |
+| Symbol    | `let id = Symbol("id");`        | Create unique identifiers for keys or testing uniqueness |
+
+---
+
+### Non-Primitive Data Types
+- Can hold **multiple values**, mutable, represented as **Objects**.
+
+| Type      | Example                         | Use in QA / Automation |
+|-----------|--------------------------------|----------------------|
+| Object    | `let user = {name: "Tester", role: "QA"};` | Store structured data like user profiles, test cases, or configs |
+| Array     | `let scores = [90, 85, 70];`    | Store multiple values, iterate over test data sets |
+| Function  | `function greet() { console.log("Hello QA"); }` | Reusable logic, helper functions, event handling in automation |
+
+---
+
+### Summary
+- **Primitive** → single, simple, immutable values, used for storing simple data and flags  
+- **Non-Primitive** → multiple, complex, mutable values, used for storing structured test data, reusable logic, and configurations
 
 
 
