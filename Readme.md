@@ -1,4 +1,4 @@
-# JavaScript for QA Automation Testers – Course Index
+# 1) Index - JavaScript for QA Automation Testers
 
 1. **Introduction to JavaScript**
 2. **Variables, Data Types, and Operators**
