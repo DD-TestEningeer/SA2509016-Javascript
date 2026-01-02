@@ -30,11 +30,56 @@
 | Type Checking | Static | Dynamic |
 | Environment | Runs on JVM or browser | Runs in browser only |
 
-## 4) What is DOM (Document Object Model)
+# 4) What is DOM (Document Object Model)
 
 - The **DOM** is an API interface provided by the browser.
 - When a web page loads, the browser creates a **Document Object Model** of the page.
 - Using the DOM, **JavaScript can access, modify, and update** all elements of an HTML document.
+
+
+# 5) Environment Setup
+
+### Step 1: Install Node.js
+1. Open a web browser.
+2. Go to **https://nodejs.org**
+3. Download the **LTS (Long Term Support)** version.
+4. Run the installer.
+5. Follow the installation wizard:
+   - Accept the license agreement
+   - Use default installation settings
+   - Click **Next** until installation completes
+6. After installation, open Command Prompt / Terminal and verify:
+   ```bash
+   node -v
+   npm -v
+
+
+
+### Step 2: Install Visual Studio Code
+
+1. Open a web browser.
+2. Go to **[https://code.visualstudio.com/download](https://code.visualstudio.com/download)**
+3. Select the installer based on your operating system (Windows / macOS / Linux).
+4. Download and run the installer.
+5. Follow the installation steps:
+
+   * Accept the license agreement
+   * Choose default settings
+   * Click **Install**
+6. Launch **Visual Studio Code** after installation.
+
+---
+
+### Step 3: Verify Setup
+
+1. Open Visual Studio Code.
+2. Open the integrated terminal (**Ctrl + `**).
+3. Run the following command to confirm Node.js is installed:
+
+   ```bash
+   node -v
+
+4. If the version is displayed, the setup is complete.
 
 
 
