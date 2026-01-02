@@ -140,6 +140,42 @@ A **JavaScript variable** is a name given to a storage location used to store da
   - Example: `value1`
 - JavaScript variables are **case-sensitive**  
   - Example: `count` and `Count` are different variables
+ 
+
+# 8) Variables in JavaScript
+
+### Local Variable
+- A local variable is declared **inside a function or a block**.
+- It is accessible **only within that function or block**.
+
+```js
+function abc() {
+  var x = 10; // local variable
+}
+````
+
+---
+
+### Global Variable
+
+* A global variable is declared **outside a function**.
+* It is accessible from **any function** in the program.
+* Variables declared using the `window` object are also global.
+
+```js
+var x = 100; // global variable
+
+function a() {
+  console.log(x);
+}
+```
+
+### QA Best Practice
+
+* Prefer **local variables** in automation scripts to avoid side effects.
+* Avoid unnecessary **global variables** to prevent flaky tests.
+
+
 
 
 
