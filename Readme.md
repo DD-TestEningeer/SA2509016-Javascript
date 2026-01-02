@@ -114,6 +114,32 @@ multi-line comment
 * Helpful for maintenance and team collaboration.
 
 
+# 7) Variables in JavaScript
+
+A **JavaScript variable** is a name given to a storage location used to store data during program execution.
+
+### Types of Variables
+
+1. **Local Variable**  
+   - Declared inside a function or block  
+   - Accessible only within that function or block
+
+2. **Global Variable**  
+   - Declared outside a function  
+   - Accessible from anywhere in the program
+
+---
+
+### Rules for Declaring Variables
+
+- Variable names must start with:
+  - A letter (`a–z` or `A–Z`)
+  - An underscore (`_`)
+  - A dollar sign (`$`)
+- Digits (`0–9`) can be used **after** the first character  
+  - Example: `value1`
+- JavaScript variables are **case-sensitive**  
+  - Example: `count` and `Count` are different variables
 
 
 
