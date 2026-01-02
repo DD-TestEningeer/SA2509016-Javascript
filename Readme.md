@@ -422,6 +422,69 @@ JavaScript data types are divided into **Primitive** and **Non-Primitive** types
 
 
 
+# 13) JavaScript Operators 
+---
+
+### 1. Arithmetic Operators
+| Operator | Example            | Result |
+|----------|------------------|--------|
+| `+`      | `2 + 3`           | 5      |
+| `-`      | `5 - 2`           | 3      |
+| `*`      | `4 * 2`           | 8      |
+| `/`      | `10 / 2`          | 5      |
+| `%`      | `10 % 3`          | 1      |
+| `++`     | `let x = 1; x++`  | 2      |
+| `--`     | `let y = 2; y--`  | 1      |
+
+---
+
+### 2. Assignment Operators
+| Operator | Example        | Result |
+|----------|---------------|--------|
+| `=`      | `let a = 10`  | a = 10 |
+| `+=`     | `a += 5`      | a = 15 |
+| `-=`     | `a -= 3`      | a = 12 |
+| `*=`     | `a *= 2`      | a = 24 |
+| `/=`     | `a /= 2`      | a = 12 |
+| `%=`     | `a %= 5`      | a = 2  |
+
+---
+
+### 3. Comparison Operators
+| Operator | Example        | Result |
+|----------|---------------|--------|
+| `==`     | `5 == '5'`    | true   |
+| `===`    | `5 === '5'`   | false  |
+| `!=`     | `5 != 3`      | true   |
+| `!==`    | `5 !== '5'`   | true   |
+| `>`      | `10 > 5`      | true   |
+| `<`      | `10 < 5`      | false  |
+| `>=`     | `10 >= 10`    | true   |
+| `<=`     | `5 <= 3`      | false  |
+
+---
+
+### 4. Logical Operators
+| Operator | Example         | Result |
+|----------|----------------|--------|
+| `&&`     | `true && false`| false  |
+| `||`     | `true || false`| true   |
+| `!`      | `!true`        | false  |
+
+---
+
+### 5. String Operator
+| Operator | Example                       | Result       |
+|----------|-------------------------------|--------------|
+| `+`      | `"QA" + " Tester"`            | `"QA Tester"`|
+
+---
+
+### 6. Ternary Operator
+| Operator       | Example                                      | Result   |
+|----------------|---------------------------------------------|----------|
+| `? :`          | `let status = age >= 18 ? "Adult" : "Minor";` | `"Adult"` if age ≥ 18 |
+
 
 
 
