@@ -30,6 +30,11 @@
 | Type Checking | Static | Dynamic |
 | Environment | Runs on JVM or browser | Runs in browser only |
 
+## 4) What is DOM (Document Object Model)
+
+- The **DOM** is an API interface provided by the browser.
+- When a web page loads, the browser creates a **Document Object Model** of the page.
+- Using the DOM, **JavaScript can access, modify, and update** all elements of an HTML document.
 
 
 
