@@ -10,9 +10,11 @@ var y = 20;  // global variable
 
 function abc() {
   var x = 10; // local variable
+
+  console.log("the value of y :" + y)
 }
 
-
+//  console.log("the value of x :" + x)
 // How to define variables 
 
 // 1) using var keyword 
