@@ -1,12 +1,16 @@
+// 1)  Practice for the different types of operators with examples 
+// Arithmetic/Comparision/Logical/Assignment 
 
+// 2) Practice for the Type conversion 
+// Number to String 
+// String to Number 
 
-// Arithmetic Operators 
+// 3) Practice for the if else based questions.
 
-// 1) addition
+// Check if a number is positive, negative, or zero.
 
-let num1 = 10;
-let num2 = 20;
+// Verify whether a user’s age is eligible for voting.
 
-let result = num1+num2;
+// Check if a given number is even or odd. // modulus 
 
-console.log("The result is : " + result);
+// Determine if a number is divisible by 3
