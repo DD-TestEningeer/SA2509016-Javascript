@@ -1,0 +1,93 @@
+// JavaScript Arrow Function
+
+// 1) function without parameters without return 
+
+function fun1(){
+
+    console.log("Function 1");
+
+}
+
+// calling the function
+ fun1();
+
+ // 2) function with parameters without return 
+
+ function fun2(username){
+
+    console.log("Function 2 : " + username);
+ }
+
+ // calling function 2
+ fun2("DemoUser");
+
+  // 3) function without parameters with return 
+
+  function fun3(){
+    let password = "Test123";
+    return password;
+
+  }
+
+  // calling function and storing the returned value
+
+  let result = fun3();
+  console.log("Function 3 : " + result);
+
+
+    // 4) function with parameters with return type
+
+    function fun4(emailId){
+        
+        let randomEmailId = emailId + 123 + "@gmail.com" ;
+
+        return randomEmailId;
+    }
+
+    // calling function with some parameters and storing results in the variable
+
+    let myEmail = fun4("testUser");
+    console.log("Function 4 : " + myEmail);
+
+
+    // Arrow Functions
+
+// 1) no function keyword,no function name, no parameters, no return type 
+ 
+let fun5 = ()=>{
+
+     console.log("Arrow Function 1");
+
+    }
+
+ // calling 
+ 
+ fun5();
+
+ // 2) no function keyword, no function name, no parameters, with return type 
+
+ const greet = () => {
+  return "Hello!";
+};
+
+console.log("The message is : " + greet);
+
+
+ // shorter version
+const greet2 = () => "Hello!";
+
+// shorter version
+const add = (a, b) => a + b;
+
+// parameters, return 
+const multiply = (a, b) => {
+  const result = a * b;
+  return result;
+};
+
+
+/////////////////////////////////////////////////
+
+
+
+
