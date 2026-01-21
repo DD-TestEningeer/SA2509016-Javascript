@@ -487,6 +487,282 @@ JavaScript data types are divided into **Primitive** and **Non-Primitive** types
 | `? :`          | Conditional shortcut | `let status = age >= 18 ? "Adult" : "Minor";` | `"Adult"` if age ≥ 18 |
 
 
+---
+
+# 14) Conditional Statements in JavaScript
+
+Conditional statements are used to **execute different blocks of code based on conditions**.
+They are heavily used in **QA automation** for validations, decision-making, and flow control.
+
+---
+
+## 1. `if` Statement
+
+Executes a block of code **only if the condition is true**.
+
+```js
+let isLoggedIn = true;
+
+if (isLoggedIn) {
+  console.log("User is logged in");
+}
+```
+
+### QA Use Case
+
+* Verify login success
+* Check element visibility
+
+---
+
+## 2. `if...else` Statement
+
+Executes one block if the condition is true, otherwise executes another block.
+
+```js
+let result = "FAIL";
+
+if (result === "PASS") {
+  console.log("Test case passed");
+} else {
+  console.log("Test case failed");
+}
+```
+
+### QA Use Case
+
+* Pass / Fail handling
+* Assertion result handling
+
+---
+
+## 3. `else if` Ladder
+
+Used to check **multiple conditions**.
+
+```js
+let statusCode = 404;
+
+if (statusCode === 200) {
+  console.log("Success");
+} else if (statusCode === 404) {
+  console.log("Not Found");
+} else if (statusCode === 500) {
+  console.log("Server Error");
+} else {
+  console.log("Unknown status");
+}
+```
+
+### QA Use Case
+
+* API response validation
+* Error handling scenarios
+
+---
+
+## 4. `switch` Statement
+
+Used when you have **multiple fixed values** to compare.
+
+```js
+let browser = "chrome";
+
+switch (browser) {
+  case "chrome":
+    console.log("Run tests on Chrome");
+    break;
+  case "firefox":
+    console.log("Run tests on Firefox");
+    break;
+  case "edge":
+    console.log("Run tests on Edge");
+    break;
+  default:
+    console.log("Unsupported browser");
+}
+```
+
+### QA Use Case
+
+* Cross-browser testing
+* Environment-based execution
+
+---
+
+## 5. Truthy and Falsy Values
+
+### Falsy Values in JavaScript
+
+These are treated as `false` in conditions:
+
+* `false`
+* `0`
+* `""` (empty string)
+* `null`
+* `undefined`
+* `NaN`
+
+```js
+let value = "";
+
+if (value) {
+  console.log("Truthy value");
+} else {
+  console.log("Falsy value");
+}
+```
+
+---
+
+## QA Best Practices
+
+* Always use **strict comparison (`===`)**
+* Handle **negative scenarios**
+* Add clear logs for condition outcomes
+* Avoid deeply nested `if` statements
+
+---
+
+# 15) Looping Statements in JavaScript
+
+Loops are used to **execute a block of code repeatedly**.
+In automation, loops are commonly used for **test data iteration** and **element handling**.
+
+---
+
+## 1. `for` Loop
+
+Used when the number of iterations is known.
+
+```js
+for (let i = 1; i <= 3; i++) {
+  console.log("Run test iteration:", i);
+}
+```
+
+### QA Use Case
+
+* Run test steps multiple times
+* Iterate over test data
+
+---
+
+## 2. `while` Loop
+
+Runs as long as the condition remains true.
+
+```js
+let count = 1;
+
+while (count <= 3) {
+  console.log("Execution count:", count);
+  count++;
+}
+```
+
+### QA Use Case
+
+* Retry mechanisms
+* Polling until a condition is met
+
+---
+
+## 3. `do...while` Loop
+
+Executes **at least once**, even if the condition is false.
+
+```js
+let attempt = 1;
+
+do {
+  console.log("Attempt:", attempt);
+  attempt++;
+} while (attempt <= 2);
+```
+
+### QA Use Case
+
+* Retry login
+* Mandatory first execution
+
+---
+
+## 4. `for...of` Loop
+
+Used to iterate over **arrays**.
+
+```js
+let users = ["Admin", "Tester", "Guest"];
+
+for (let user of users) {
+  console.log("User:", user);
+}
+```
+
+### QA Use Case
+
+* Iterate over test users
+* Loop through input values
+
+---
+
+## 5. `for...in` Loop
+
+Used to iterate over **object properties**.
+
+```js
+let user = {
+  name: "QA",
+  role: "Tester",
+  active: true
+};
+
+for (let key in user) {
+  console.log(key + ":", user[key]);
+}
+```
+
+### QA Use Case
+
+* Read API response objects
+* Validate key-value pairs
+
+---
+
+## Loop Control Statements
+
+### `break`
+
+Stops the loop completely.
+
+```js
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) break;
+  console.log(i);
+}
+```
+
+### `continue`
+
+Skips the current iteration.
+
+```js
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) continue;
+  console.log(i);
+}
+```
+
+---
+
+## QA Best Practices
+
+* Avoid infinite loops
+* Use `for...of` instead of traditional loops for arrays
+* Keep loop logic simple and readable
+
+---
 
 
 
