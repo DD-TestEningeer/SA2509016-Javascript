@@ -765,6 +765,363 @@ for (let i = 1; i <= 5; i++) {
 ---
 
 
+# 16) Functions in JavaScript
+
+A **function** is a reusable block of code designed to perform a specific task.
+Functions help reduce code duplication and improve **maintainability**, which is critical in **automation frameworks**.
+
+---
+
+## 1. Function Declaration
+
+```js
+function login() {
+  console.log("Login successful");
+}
+
+login();
+```
+
+### QA Use Case
+
+* Reusable login steps
+* Common setup or teardown logic
+
+---
+
+## 2. Function with Parameters
+
+```js
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(2, 3)); // 5
+```
+
+### QA Use Case
+
+* Passing dynamic test data
+* Parameterized validations
+
+---
+
+## 3. Function with Return Value
+
+```js
+function isUserActive(status) {
+  return status === "ACTIVE";
+}
+
+console.log(isUserActive("ACTIVE")); // true
+```
+
+### QA Use Case
+
+* Assertion helpers
+* Conditional test flow
+
+---
+
+## 4. Function Expression
+
+```js
+const logout = function () {
+  console.log("User logged out");
+};
+
+logout();
+```
+
+---
+
+## 5. Arrow Functions (ES6)
+
+Shorter and cleaner syntax.
+
+```js
+const multiply = (a, b) => a * b;
+console.log(multiply(2, 4)); // 8
+```
+
+### QA Best Practice
+
+* Prefer arrow functions for callbacks
+* Avoid them when `this` context is required
+
+---
+
+# 17) Working with Objects in JavaScript
+
+An **object** stores data in **key–value pairs**.
+
+```js
+let user = {
+  name: "QA Tester",
+  role: "Automation",
+  active: true
+};
+```
+
+---
+
+## Accessing Object Properties
+
+### Dot Notation
+
+```js
+console.log(user.name);
+```
+
+### Bracket Notation
+
+```js
+console.log(user["role"]);
+```
+
+---
+
+## Modifying Object Properties
+
+```js
+user.active = false;
+user.location = "India";
+```
+
+---
+
+## Object with Method
+
+```js
+let testCase = {
+  id: 101,
+  status: "PASS",
+  printStatus: function () {
+    console.log(this.status);
+  }
+};
+
+testCase.printStatus();
+```
+
+### QA Use Case
+
+* API responses
+* Test configuration objects
+
+---
+
+# 18) Arrays in JavaScript
+
+An **array** is used to store multiple values in a single variable.
+
+```js
+let browsers = ["Chrome", "Firefox", "Edge"];
+```
+
+---
+
+## Accessing Array Elements
+
+```js
+console.log(browsers[0]); // Chrome
+```
+
+---
+
+## Common Array Methods
+
+| Method      | Use                  |
+| ----------- | -------------------- |
+| `push()`    | Add element at end   |
+| `pop()`     | Remove last element  |
+| `shift()`   | Remove first element |
+| `unshift()` | Add element at start |
+| `length`    | Total elements       |
+
+```js
+browsers.push("Safari");
+console.log(browsers.length);
+```
+
+---
+
+## Looping through Arrays
+
+```js
+for (let browser of browsers) {
+  console.log(browser);
+}
+```
+
+### QA Use Case
+
+* Data-driven testing
+* Iterating test users, environments, inputs
+
+---
+
+# 19) Strings in JavaScript
+
+Strings represent **textual data**.
+
+```js
+let message = "Test Passed";
+```
+
+---
+
+## Common String Methods
+
+| Method          | Example                             |
+| --------------- | ----------------------------------- |
+| `length`        | `message.length`                    |
+| `toUpperCase()` | `"qa".toUpperCase()`                |
+| `toLowerCase()` | `"QA".toLowerCase()`                |
+| `includes()`    | `"Login Success".includes("Login")` |
+| `trim()`        | `"  test  ".trim()`                 |
+
+---
+
+## String Template Literals (ES6)
+
+```js
+let user = "Admin";
+console.log(`Welcome ${user}`);
+```
+
+### QA Use Case
+
+* Dynamic logs
+* Readable assertion messages
+
+---
+
+# 20) OOP Concepts in JavaScript
+
+JavaScript supports **Object-Oriented Programming** using classes.
+
+---
+
+## 1. Class and Object
+
+```js
+class User {
+  constructor(name, role) {
+    this.name = name;
+    this.role = role;
+  }
+
+  login() {
+    console.log(this.name + " logged in");
+  }
+}
+
+let user1 = new User("Tester", "QA");
+user1.login();
+```
+
+---
+
+## 2. Encapsulation
+
+Binding data and methods together.
+
+```js
+class Account {
+  constructor(balance) {
+    this.balance = balance;
+  }
+
+  getBalance() {
+    return this.balance;
+  }
+}
+```
+
+---
+
+## 3. Inheritance
+
+```js
+class Admin extends User {
+  deleteUser() {
+    console.log("User deleted");
+  }
+}
+```
+
+---
+
+## 4. Polymorphism
+
+```js
+class Test {
+  run() {
+    console.log("Running test");
+  }
+}
+
+class ApiTest extends Test {
+  run() {
+    console.log("Running API test");
+  }
+}
+```
+
+---
+
+## 5. Abstraction
+
+Achieved using **methods and class structure**, hiding internal logic.
+
+### QA Use Case
+
+* Page Object Model (POM)
+* Reusable test components
+
+---
+
+# 21) Converting JSON Object to JavaScript
+
+JSON is heavily used in **API testing**.
+
+---
+
+## JSON to JavaScript Object
+
+```js
+let jsonData = '{"name":"QA","role":"Tester"}';
+let obj = JSON.parse(jsonData);
+
+console.log(obj.name);
+```
+
+---
+
+## JavaScript Object to JSON
+
+```js
+let user = {
+  name: "Admin",
+  active: true
+};
+
+let jsonString = JSON.stringify(user);
+console.log(jsonString);
+```
+
+---
+
+## QA Use Case
+
+* API request & response handling
+* Payload validation
+* Data-driven automation
+
+---
+
+
 
 
 
